@@ -76,7 +76,7 @@ jobs:
           path: ${{ env.SCHEMA_REPO_DIRECTORY }}
 
       - name: "Install hatch"
-        uses: pypa/hatch@257e27e51a6a5616ed08a39a408a21c35c9931bc # pypa/hatch@install
+        uses: pypa/hatch@f647ed70d49adb885f53a27d1c7f5bdaeacf2c60 # pypa/hatch@install
 
       - name: Generate current schema
         if: steps.check_artifact_changes.outputs.artifacts_changed == 'true'

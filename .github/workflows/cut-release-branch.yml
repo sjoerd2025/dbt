@@ -199,7 +199,7 @@ jobs:
           sudo apt-get install libsasl2-dev
 
       - name: "Install hatch"
-        uses: pypa/hatch@257e27e51a6a5616ed08a39a408a21c35c9931bc # pypa/hatch@install
+        uses: pypa/hatch@f647ed70d49adb885f53a27d1c7f5bdaeacf2c60 # pypa/hatch@install
 
       - name: "Bump Version To ${{ needs.cleanup_changelog.outputs.next-version }}"
         run: |
